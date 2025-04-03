@@ -1,5 +1,7 @@
 package mozartproject.factory;
 
-public abstract class MidiEventFactoryAbstract {
+public interface MidiEventFactoryAbstract {
+
+	MidiEventFactory createFactory();
 
 }
