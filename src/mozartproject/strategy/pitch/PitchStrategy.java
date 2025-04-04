@@ -1,6 +1,6 @@
 package mozartproject.strategy.pitch;
 
-public class PitchStrategy {
-
+public interface PitchStrategy {
+	int modifyPitch (int note) ;
 	
 }
