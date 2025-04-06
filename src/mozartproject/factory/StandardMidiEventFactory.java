@@ -7,7 +7,10 @@ import javax.sound.midi.ShortMessage;
 public class StandardMidiEventFactory implements MidiEventFactory {
 	
 	/**
-	 * 
+	 * Concrete Implementation of method set in MidiEventFactory interface.
+	 * Creates a Standard note-on MIDI event.
+	 * This method takes in four prarameters in tick, note, velocity, and channel.
+	 * It returns a event of node-on and throws an exception if it cannot be constructed
 	 */
 	@Override
 	public MidiEvent createNoteOn(int tick, int note, int velocity, int channel) throws InvalidMidiDataException {
@@ -19,7 +22,11 @@ public class StandardMidiEventFactory implements MidiEventFactory {
 	}
 
 		/**
-		 * 
+	 * This is also another implementation of a method. 
+	 * Creates a Standard note-off MIDI event.
+	 * takes in tick, note, and a channel parameter.
+	 * returns a note off event
+	 * Throws an exception if the event cannot be created for whatever reason
 		 */
 	@Override
 	public MidiEvent createNoteOff(int tick, int note, int channel) throws InvalidMidiDataException {
