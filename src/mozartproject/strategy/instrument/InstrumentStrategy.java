@@ -9,7 +9,9 @@ import javax.sound.midi.ShortMessage;
 import javax.sound.midi.Track;
 
 /**
- * 
+ * Strategy interface for applying an instrument change to a MIDI track.
+ * Different implementations of this interface represent different instruments
+ * by modifying the track with a specific MIDI program change on the given channel.
  */
 public interface InstrumentStrategy {
 	
