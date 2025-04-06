@@ -1,6 +1,9 @@
 package mozartproject.data;
 
-
+/**
+ * Represents a MIDI event's data including timing, note characteristics, and MIDI channel info.
+ * This class is used to encapsulate information parsed from a CSV file
+ */
 public class MidiEventData {
     private int startEndTick, velocity, note, channel, noteOnOff;
     private int instrument;
@@ -14,7 +17,10 @@ public class MidiEventData {
         this.instrument = instrument;
         this.noteOnOff = noteOnOff;
     }
-
+/**
+ * getters and setters for all of the variables 
+ * 
+ */
 	public int getStartEndTick() {
 		return startEndTick;
 	}

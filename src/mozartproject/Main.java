@@ -51,13 +51,13 @@ public class Main {
 
                 if (event.getNoteOnOff() == ShortMessage.NOTE_ON) {
                     track.add(factory.createNoteOn(event.getStartEndTick(),
-                                                    modifiedNote,
-                                                    event.getVelocity(),
-                                                    event.getChannel()));
+                    modifiedNote,
+                    event.getVelocity(),
+                    event.getChannel()));
                 } else {
                     track.add(factory.createNoteOff(event.getStartEndTick(),
-                                                    modifiedNote,
-                                                    event.getChannel()));
+                    modifiedNote,
+                    event.getChannel()));
                 }
             }
 
